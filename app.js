@@ -16,6 +16,7 @@ let numGuessed = 4;
 button.addEventListener('click', () => {
     const userGuess = Number(userInput.value);
     numGuessed--;
+    numGuessedRemaining.textContent = numGuessed;
     let result
 
     if (userGuess === randomNum) {
