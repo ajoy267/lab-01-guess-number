@@ -20,10 +20,20 @@ button.addEventListener('click', () => {
 
     if (userGuess === randomNum) {
         result = `You're Correct, You Win!`;
+        button.disabled = true;
     } else if (userGuess < randomNum) {
         result = `Guess Too Low, Try Again`;
+        button.disabled = false;
     } else {
         result = `Guess Too High, Try Again!`;
+        button.disabled = false;
+    }
+    if (numGuessed === 0) {
+        result = `You ran out of guesses! Game Over! The answer was ${randomNum}`;
+        button.disabled = true;
+    } else {
+        button.disabled = false;
     }
     resultMessage.textContent = result;
 });
+
