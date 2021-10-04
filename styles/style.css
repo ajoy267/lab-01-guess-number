@@ -1,0 +1,11 @@
+* {
+    font-family: 'Indie Flower', cursive;
+}
+
+input {
+    width: 175px;
+}
+
+span {
+    border: 1px solid black;
+}

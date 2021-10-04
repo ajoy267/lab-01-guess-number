@@ -18,3 +18,17 @@
     - 'Guess too high': userGuess > randomNum
     - 'Guess too low': userGuess < randomNum
     - 'Invalid Guess': if guess is higher than 20
+
+### PseudoCode for Event
+ ```javascript
+ // What Events am I listening for?
+ // on button click do the following:
+ //   decrement or increment the guess count
+ //   get the value of the user guess from the input
+ //   CONVERT THE INPUT TO A NUMBER
+ //   compare the user guess to the randomNumber
+ //   if(userGuess === randomNum) -- display you won!
+ //   else if (numGuesses === 4 ) -- display you lost, out of guesses
+ //  else if (userGuess > randomNum) -- display Guess too High
+ //  else if (userGuess < randomNum) -- display Guess too Low
+ ```
