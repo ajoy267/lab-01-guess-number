@@ -12,16 +12,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi&display=swap" rel="stylesheet">
     <title>Guess The Number</title>
 </head>
 
 <body>
-    <h1>Guess The Random Number</h1>
-    <input placeholder="Number Between 1 and 20" id="user-guess">
-    <button id="guess-button">Guess</button>
-    <p>Number of Guesses Remaining</p>
-    <span id="number-of-guesses">0</span>
-    <p id="results">Results here</p>
+    <header>
+        <h1>Guess The Random Number</h1>
+        <input placeholder="Number Between 1 and 20" id="user-input">
+        <button id="guess-button">Guess</button>
+    </header>
+    <main>
+        <p>Number of Guesses Remaining</p>
+        <span id="number-of-guesses">4</span>
+        <p id="result-message"></p>
+    </main>
+    <footer>
+        <button id="play-again">Play Again</button>
+    </footer>
     <script type="module" src="./app.js"></script>
 </body>
 

@@ -17,7 +17,6 @@
     - 'You're Correct, You Win!': userGuess === randomNum
     - 'Guess too high': userGuess > randomNum
     - 'Guess too low': userGuess < randomNum
-    - 'Invalid Guess': if guess is higher than 20
 
 ### PseudoCode for Event
  ```javascript
