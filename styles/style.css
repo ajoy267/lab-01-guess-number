@@ -2,6 +2,14 @@
     font-family: 'Yaldevi', sans-serif;
 }
 
+body {
+    background-image: url('../assets/random-numbers-dice.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
 header, main, footer {
     display: flex;
     justify-content: center;
@@ -14,19 +22,38 @@ h1, p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: orange;
 }
 
 input {
     width: 175px;
+    height: 40px;
     text-align: center;
 }
 
 span {
     border: 1px solid black;
     width: 75px;
+    height: 40px;
     text-align: center;
+    padding-top: 5px;
+    background-color: white;
 }
 
 button {
     width: 80px;
+    height: 40px;
+}
+
+#guess-button {
+    margin: 22px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    margin: 25px;
+    font-size: 1.5rem;
 }
