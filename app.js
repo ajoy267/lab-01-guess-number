@@ -6,10 +6,10 @@ const button = document.getElementById('guess-button');
 const resetButton = document.getElementById('play-again');
 
 //Results
-let resultMessage = document.getElementById('result-message');
+const resultMessage = document.getElementById('result-message');
 
 //numbers
-let numGuessedRemaining = document.getElementById('number-of-guesses');
+const numGuessedRemaining = document.getElementById('number-of-guesses');
 let randomNum = Math.floor(Math.random() * 20) + 1;
 let numGuessed = 4;
 
@@ -26,10 +26,11 @@ button.addEventListener('click', () => {
     } else {
         result = `Guess Too High, Try Again!`;
     }
-    if (numGuessed === 0) {
-        result = `You ran out of guesses! Game Over! The answer was ${randomNum}`;
+    if (userGuess === randomNum) {
+        result = `You're Correct, You Win!`;
         button.disabled = true;
-    } else if (userGuess === randomNum) {
+    } else if (numGuessed === 0) {
+        result = `You ran out of guesses! Game Over! The answer was ${randomNum}`;
         button.disabled = true;
     } else {
         button.disabled = false;
